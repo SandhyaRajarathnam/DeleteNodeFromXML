@@ -17,7 +17,7 @@ Script usage : python xml_parse_and _delete.py --eid <employee id>
     """)
     if msg: print("Error: %s"%msg)
     sys.exit()
-
+#To read input.xml and remove the employee id provided as input and write it to output-timestsamp file
 def removeEmployeeData(EMPLOYEEID):
     workingDir=os.path.dirname(os.path.realpath(__file__))
     xmlPath=workingDir + "/input.xml"
